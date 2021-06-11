@@ -5,12 +5,18 @@
     </head>
     <body>
         <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()"> Compute </button>
+        <br>
+        <br>
+        <label for="principal">Amount $:</label>
+        <input type="number"  id="principal" name="principal" placeholder="principal" size="40" maxlength="40"></input> 
+        <br>
+        <label for="rate">Rate %:</label>
+        <input type="number"  id="rate" name="rate" placeholder="number" size="40" maxlength="40"></input>  
+        <br>
+        <label for="years">Years:</label>
+        <input type="number"  id="years" placeholder="10..15..20.. there's no limit" size="40" maxlength="40" name="years"> </input>
+        <br>
+        <br>
+        <button type="submit" onclick="compute()"> Calculate </button>
     </body>
 </html>
